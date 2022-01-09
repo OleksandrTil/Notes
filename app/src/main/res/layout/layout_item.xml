@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/notes_title_layout_height"
+
+    >
+
+    <TextView
+        android:id="@+id/notes_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/notes_title_layout_height"
+        android:layout_marginStart="@dimen/layout_item_margin_text"
+        android:layout_marginEnd="@dimen/layout_item_margin_text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_item_view_layout_height"
+        android:background="@drawable/separator"
+        android:dividerPadding="@dimen/layout_item_divider_padding"
+        android:showDividers="middle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
